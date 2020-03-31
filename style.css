@@ -8,6 +8,73 @@
   box-sizing: border-box;
 }
 
+.loaderr {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  background-color: #131417;
+  z-index: 10000;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  color: #f7f7f7;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.lds-heart {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  transform: rotate(45deg);
+  transform-origin: 40px 40px;
+}
+.lds-heart div {
+  top: 32px;
+  left: 32px;
+  position: absolute;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+  animation: lds-heart 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.lds-heart div:after,
+.lds-heart div:before {
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: #fff;
+}
+.lds-heart div:before {
+  left: -24px;
+  border-radius: 50% 0 0 50%;
+}
+.lds-heart div:after {
+  top: -24px;
+  border-radius: 50% 50% 0 0;
+}
+@keyframes lds-heart {
+  0% {
+    transform: scale(0.95);
+  }
+  5% {
+    transform: scale(1.1);
+  }
+  39% {
+    transform: scale(0.85);
+  }
+  45% {
+    transform: scale(1);
+  }
+  60% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+
 body {
   font-family: "Century Gothic";
   font-weight: 100;
@@ -143,7 +210,7 @@ section {
   transition: all 0.2s ease-in-out;
   cursor: pointer;
 }
-.white{
+.white {
   background-color: #131417;
   color: #f7f7f7;
   border: 2px solid #000106;
@@ -234,13 +301,12 @@ h1 {
   text-align: end;
 }
 .details h2 {
-  
   padding-top: 1em;
   padding-bottom: 0.8rem;
   font-size: 2.5rem;
 }
-.webpage h2{
-font-size: 1.4rem;
+.webpage h2 {
+  font-size: 1.4rem;
 }
 .details .iamshashwat {
   color: #f7f7f7;
@@ -248,7 +314,8 @@ font-size: 1.4rem;
   font-size: 2.5rem;
   font-weight: 600;
 }
-.details p {  color: #f7f7f7;
+.details p {
+  color: #f7f7f7;
   padding-bottom: 3em;
   font-size: 1.2rem;
   font-weight: 600;

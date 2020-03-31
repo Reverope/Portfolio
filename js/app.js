@@ -41,6 +41,16 @@
 // }
 
 // init();
+document.onreadystatechange = function() {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector(".loaderr").style.visibility = "visible";
+  } else {
+    document.querySelector(".loaderr").style.display = "none";
+    document.querySelector("body").style.visibility = "visible";
+  }
+};
+
 
 const textpath = document.querySelector("#text-path");
 const leftImg = document.querySelectorAll(".model-left");
