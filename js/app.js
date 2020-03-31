@@ -1,56 +1,15 @@
-// function init() {
-//   const slides = document.querySelectorAll(".slide");
-//   const pages = document.querySelectorAll(".page");
-//   const radialGradiet = [
-//     `radial-gradient(#163462,#000106)`,
-//     `radial-gradient(#4e3022,#161616)`,
-//     `radial-gradient(#068C04,#000106)`
-//   ];
-
-//   //Tracker
-
-//   let current = 0;
-
-//   slides.forEach((slide, index) => {
-//     slide.addEventListener("click", function() {
-//       changeDots(this);
-//       nextSlide(index);
-//     });
-//   });
-
-//   function changeDots(dot) {
-//     slides.forEach(slide => {
-//       slide.classList.remove("active");
-//       dot.classList.add("active");
-//     });
-//   }
-
-//   function nextSlide(pageNumber) {
-//     const nextPage = pages[pageNumber];
-//     const currentPage = pages[current];
-//     // current = pageNumber;
-//     const nextLeft = nextPage.querySelector(".hero .model-left");
-//     const nextRight = nextPage.querySelector(".hero .model-right");
-//     const currentLeft = currentPage.querySelector(".hero .model-left");
-//     const currentRight = currentPage.querySelector(".hero .model-right");
-//     const nextText = nextPage.querySelector(".details");
-//     const portfolio = document.querySelector(".portfolio");
-
-//   }
-
-// }
-
-// init();
+// Loader
 document.onreadystatechange = function() {
   if (document.readyState !== "complete") {
     document.querySelector("body").style.visibility = "hidden";
     document.querySelector(".loaderr").style.visibility = "visible";
   } else {
-    document.querySelector(".loaderr").style.display = "none";
-    document.querySelector("body").style.visibility = "visible";
+    setTimeout(function() {
+      document.querySelector(".loaderr").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+    }, 000);
   }
 };
-
 
 const textpath = document.querySelector("#text-path");
 const leftImg = document.querySelectorAll(".model-left");
@@ -114,7 +73,7 @@ rightImg.forEach(img => {
   RightImg.observe(img);
 });
 
-//javascript for nav-open
+//Javascript for nav-open
 
 let isNavOpen = false;
 nav_opener.addEventListener("click", function() {
