@@ -8,7 +8,7 @@
   box-sizing: border-box;
 }
 
-a{
+a {
   text-decoration: none;
 }
 
@@ -236,7 +236,7 @@ h1 {
 .home {
   color: #f7f7f7;
   background: #131417;
-  background-image: url(../img/plpl.svg);
+  background-image: url(../img/plpl.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
@@ -299,6 +299,7 @@ h1 {
 .details .hello {
   font-size: 5rem;
   text-align: end;
+  letter-spacing: 1.4rem;
 }
 .details h3 {
   text-align: end;
@@ -312,7 +313,7 @@ h1 {
 .details h2 {
   padding-top: 1em;
   padding-bottom: 0.8rem;
-  font-size: 2.5rem;
+  font-size: 2.1rem;
 }
 .webpage h2 {
   font-size: 1.4rem;
