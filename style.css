@@ -235,14 +235,13 @@ h1 {
   background-image: url(img/plpl.svg);
   background-repeat: no-repeat;
   background-size: cover;
-
   height: 90vh;
   grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
 
 @media (max-width: 480px) {
   .homepage {
-    background-image: none;
+    background-image: url(" ");
     background: #131417;
   }
 }
