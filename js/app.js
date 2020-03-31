@@ -7,7 +7,7 @@ document.onreadystatechange = function() {
     setTimeout(function() {
       document.querySelector(".loaderr").style.display = "none";
       document.querySelector("body").style.visibility = "visible";
-    }, 000);
+    }, 2000);
   }
 };
 
