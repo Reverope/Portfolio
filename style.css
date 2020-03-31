@@ -239,10 +239,12 @@ h1 {
   height: 90vh;
   grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
-.homepage {
-  text-align: center;
-  grid-column: 2/5;
-  align-self: center;
+
+@media (max-width: 480px) {
+  .homepage {
+    background-image: none;
+    background: #131417;
+  }
 }
 .naming {
   background-image: url(img/plpl2.svg);
