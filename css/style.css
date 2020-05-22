@@ -236,19 +236,19 @@ h1 {
 .home {
   color: #f7f7f7;
   background: #131417;
-  background-image: url(../img/plpl.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url(../img/plpl.jpg); */
+  /* background-repeat: no-repeat;
+  background-size: cover; */
   height: 90vh;
   grid-template-columns: 5% 1fr 1fr 1fr 5%;
 }
 .homepage {
   text-align: center;
-  grid-column: 2/5;
+  grid-column: 3/4;
   align-self: center;
 }
 .naming {
-  background-image: url(../img/plpl2.svg);
+  /* background-image: url(../img/plpl2.svg); */
   background-repeat: no-repeat;
   background-size: cover;
   text-align: start;
@@ -280,6 +280,7 @@ h1 {
   align-self: center;
   grid-column: 2/5;
 }
+
 .web {
   color: #131417;
   background-color: #f7f7f7;
@@ -298,7 +299,7 @@ h1 {
 
 .details .hello {
   font-size: 5rem;
-  text-align: end;
+  text-align: center;
   letter-spacing: 1.4rem;
 }
 .details h3 {
@@ -310,6 +311,8 @@ h1 {
   text-align: end;
   font-size: 8rem;
 }
+.details h1 {
+}
 .details h2 {
   padding-top: 1em;
   padding-bottom: 0.8rem;
@@ -319,13 +322,13 @@ h1 {
   font-size: 1.4rem;
 }
 .details .iamshashwat {
-  color: #f7f7f7;
-  padding-bottom: 4rem;
-  font-size: 2.5rem;
+  margin-top: -2rem;
+  color: #131417;
+  font-size: 2rem;
   font-weight: 600;
 }
 .details p {
-  color: #f7f7f7;
+  color: #131417;
   padding-bottom: 3em;
   font-size: 1.2rem;
   font-weight: 600;

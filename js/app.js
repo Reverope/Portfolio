@@ -1,15 +1,15 @@
 // Loader
-document.onreadystatechange = function() {
-  if (document.readyState !== "complete") {
-    document.querySelector("body").style.visibility = "hidden";
-    document.querySelector(".loaderr").style.visibility = "visible";
-  } else {
-    setTimeout(function() {
-      document.querySelector(".loaderr").style.display = "none";
-      document.querySelector("body").style.visibility = "visible";
-    }, 2000);
-  }
-};
+// document.onreadystatechange = function() {
+//   if (document.readyState !== "complete") {
+//     document.querySelector("body").style.visibility = "hidden";
+//     document.querySelector(".loaderr").style.visibility = "visible";
+//   } else {
+//     setTimeout(function() {
+//       document.querySelector(".loaderr").style.display = "none";
+//       document.querySelector("body").style.visibility = "visible";
+//     }, 2000);
+//   }
+// };
 
 const textpath = document.querySelector("#text-path");
 const leftImg = document.querySelectorAll(".model-left");
@@ -24,15 +24,15 @@ function updateTextPathOffset(offset) {
 }
 
 function onSccoll() {
-  requestAnimationFrame(function() {
+  requestAnimationFrame(function () {
     updateTextPathOffset(window.scrollY * 0.5 + 20);
   });
 }
 
 window.addEventListener("scroll", onSccoll);
 
-const observer1 = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const observer1 = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting == true) {
       entry.target.classList.add("animate");
     } else {
@@ -42,8 +42,8 @@ const observer1 = new IntersectionObserver(entries => {
   });
 });
 
-const LeftImg = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const LeftImg = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting == true) {
       entry.target.classList.add("down");
     } else {
@@ -51,8 +51,8 @@ const LeftImg = new IntersectionObserver(entries => {
     }
   });
 });
-const RightImg = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
+const RightImg = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
     if (entry.isIntersecting == true) {
       entry.target.classList.add("up");
     } else {
@@ -61,22 +61,22 @@ const RightImg = new IntersectionObserver(entries => {
   });
 });
 
-titles.forEach(title => {
+titles.forEach((title) => {
   observer1.observe(title);
 });
 
-leftImg.forEach(img => {
+leftImg.forEach((img) => {
   LeftImg.observe(img);
 });
 
-rightImg.forEach(img => {
+rightImg.forEach((img) => {
   RightImg.observe(img);
 });
 
 //Javascript for nav-open
 
 let isNavOpen = false;
-nav_opener.addEventListener("click", function() {
+nav_opener.addEventListener("click", function () {
   if (!isNavOpen) {
     document.getElementById("nav-open").style.transform = "translateY(0%)";
     document
