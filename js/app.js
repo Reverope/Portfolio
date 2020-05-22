@@ -1,15 +1,14 @@
-// Loader
-// document.onreadystatechange = function() {
-//   if (document.readyState !== "complete") {
-//     document.querySelector("body").style.visibility = "hidden";
-//     document.querySelector(".loaderr").style.visibility = "visible";
-//   } else {
-//     setTimeout(function() {
-//       document.querySelector(".loaderr").style.display = "none";
-//       document.querySelector("body").style.visibility = "visible";
-//     }, 2000);
-//   }
-// };
+document.onreadystatechange = function () {
+  if (document.readyState !== "complete") {
+    document.querySelector("body").style.visibility = "hidden";
+    document.querySelector(".loaderr").style.visibility = "visible";
+  } else {
+    setTimeout(function () {
+      document.querySelector(".loaderr").style.display = "none";
+      document.querySelector("body").style.visibility = "visible";
+    }, 2000);
+  }
+};
 
 const textpath = document.querySelector("#text-path");
 const leftImg = document.querySelectorAll(".model-left");
