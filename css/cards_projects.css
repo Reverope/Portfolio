@@ -55,6 +55,11 @@
 .card--11 .card__img--hover {
   background-image: url("../img/projectscards/diary.jfif");
 }
+
+.card--12 .card__img,
+.card--12 .card__img--hover {
+  background-image: url("../img/projectscards/covid19.png");
+}
 .gt {
   width: 40px;
   height: 40px;
